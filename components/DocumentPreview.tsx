@@ -26,7 +26,7 @@ export const DocumentPreview: React.FC<DocumentPreviewProps> = ({ data, content 
         <div className="text-center font-bold mb-6">
           <p className="text-lg uppercase">Rencana Pelaksanaan Pembelajaran (RPP)</p>
           <p className="text-lg uppercase">MIS Al Muslimun</p>
-          <p className="text-base font-normal mt-1">Kepala Madrasah: AHMAD HUSSAINI, S.Pd.I</p>
+          <p className="text-base font-normal mt-1">Kurikulum Berbasis Cinta</p>
         </div>
 
         {/* Meta Data Table - Using flex for alignment */}
