@@ -85,7 +85,7 @@ export const generateDocx = async (data: RPPData, content: GeneratedContent): Pr
         }),
         new Paragraph({
           children: [
-            new TextRun({ text: "Kepala Madrasah: AHMAD HUSSAINI, S.Pd.I", font: font, size: 24 }),
+            new TextRun({ text: "Kurikulum Berbasis Cinta", font: font, size: 24 }),
           ],
           alignment: AlignmentType.CENTER,
           spacing: { after: 100 },
