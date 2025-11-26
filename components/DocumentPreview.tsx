@@ -26,6 +26,7 @@ export const DocumentPreview: React.FC<DocumentPreviewProps> = ({ data, content 
         <div className="text-center font-bold mb-6">
           <p className="text-lg uppercase">Rencana Pelaksanaan Pembelajaran (RPP)</p>
           <p className="text-lg uppercase">MIS Al Muslimun</p>
+          <p className="text-base font-normal mt-1">Kepala Madrasah: AHMAD HUSSAINI, S.Pd.I</p>
         </div>
 
         {/* Meta Data Table - Using flex for alignment */}
@@ -41,6 +42,11 @@ export const DocumentPreview: React.FC<DocumentPreviewProps> = ({ data, content 
                 <td className="align-top py-0.5">Fase/Kelas</td>
                 <td className="align-top py-0.5">:</td>
                 <td className="align-top py-0.5">{data.faseKelas}</td>
+              </tr>
+              <tr>
+                <td className="align-top py-0.5">Semester</td>
+                <td className="align-top py-0.5">:</td>
+                <td className="align-top py-0.5">{data.semester}</td>
               </tr>
               <tr>
                 <td className="align-top py-0.5">Materi Pokok</td>
@@ -107,7 +113,7 @@ export const DocumentPreview: React.FC<DocumentPreviewProps> = ({ data, content 
               ))}
             </ul>
 
-            <h4 className="font-bold mt-3">2. Kegiatan Inti (... menit)</h4>
+            <h4 className="font-bold mt-3">2. Kegiatan Inti (50 menit)</h4>
             <div className="pl-0 space-y-2 mt-1">
                {/* Dynamic Steps rendering based on Model */}
                {content.kegiatanInti.map((step, idx) => (
