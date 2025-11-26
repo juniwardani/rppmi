@@ -83,12 +83,20 @@ export const generateDocx = async (data: RPPData, content: GeneratedContent): Pr
           alignment: AlignmentType.CENTER,
           spacing: { after: 100 },
         }),
+        new Paragraph({
+          children: [
+            new TextRun({ text: "Kepala Madrasah: AHMAD HUSSAINI, S.Pd.I", font: font, size: 24 }),
+          ],
+          alignment: AlignmentType.CENTER,
+          spacing: { after: 100 },
+        }),
 
         // Metadata Table
         new Table({
           rows: [
             createMetaRow("Mata Pelajaran", data.mataPelajaran),
             createMetaRow("Fase/Kelas", data.faseKelas),
+            createMetaRow("Semester", data.semester),
             createMetaRow("Materi Pokok", data.materiPokok),
             createMetaRow("Tema Kurikulum Berbasis Cinta", data.temaKBC.join(", ")),
             createMetaRow("Materi Insersi", content.materiInsersi),
