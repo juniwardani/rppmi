@@ -33,12 +33,18 @@ export enum SubjectOptions {
   FIKIH = "Fikih",
   SKI = "Sejarah Kebudayaan Islam",
   BAHASA_ARAB = "Bahasa Arab",
-  TEMATIK_UMUM = "Tematik (Umum)",
+  PPKN = "Pendidikan Pancasila dan Kewarganegaraan",
+  BAHASA_INDONESIA = "Bahasa Indonesia",
   MATEMATIKA = "Matematika",
-  PJOK = "PJOK",
-  SENI_BUDAYA = "Seni Budaya",
-  BAHASA_INGGRIS = "Bahasa Inggris"
+  IPAS = "Ilmu Pengetahuan Alam dan Sosial",
+  PJOK = "Pendidikan Jasmani Olahraga dan Kesehatan",
+  SENI_BUDAYA = "Seni dan Budaya",
+  PRAKARYA = "Prakarya (Budidaya, Pengolahan, Kerajinan, dan Rekayasa)",
+  BTA = "Baca Tulis Al Quran",
+  BAHASA_INGGRIS = "Bahasa Inggris",
+  PSRA = "PSRA"
 }
+
 
 export enum ClassOptions {
   FASE_A_1 = "Fase A / Kelas 1",
