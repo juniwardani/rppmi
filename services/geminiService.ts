@@ -76,9 +76,10 @@ export const generateRPPContent = async (data: RPPData): Promise<GeneratedConten
     === DATA UTAMA ===
     1. Mata Pelajaran: ${data.mataPelajaran}
     2. Fase/Kelas: ${data.faseKelas}
-    3. Materi Pokok: ${data.materiPokok}
-    4. Tema Kurikulum Berbasis Cinta (KBC): [${data.temaKBC.join(", ")}]
-    5. Model Pembelajaran: ${data.modelPembelajaran}
+    3. Semester: ${data.semester}
+    4. Materi Pokok: ${data.materiPokok}
+    5. Tema Kurikulum Berbasis Cinta (KBC): [${data.temaKBC.join(", ")}]
+    6. Model Pembelajaran: ${data.modelPembelajaran}
     
     === INSTRUKSI PENYUSUNAN KONTEN PER BAGIAN ===
 
