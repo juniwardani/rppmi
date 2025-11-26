@@ -2,6 +2,7 @@
 export interface RPPData {
   mataPelajaran: string;
   faseKelas: string;
+  semester: string;
   materiPokok: string;
   temaKBC: string[];
   modelPembelajaran: string;
@@ -53,6 +54,11 @@ export enum ClassOptions {
   FASE_B_4 = "Fase B / Kelas 4",
   FASE_C_5 = "Fase C / Kelas 5",
   FASE_C_6 = "Fase C / Kelas 6",
+}
+
+export enum SemesterOptions {
+  GANJIL = "I / Ganjil",
+  GENAP = "II / Genap"
 }
 
 export enum ThemeKBCOptions {
@@ -142,7 +148,6 @@ export const ModelDescriptions: Record<string, string> = {
 
   [LearningModelOptions.HUMANISTIC]:
     "Model yang menekankan perkembangan kepribadian, motivasi internal, dan kebutuhan emosional peserta didik.",
-  // Model lama (tidak ditampilkan lagi agar tidak panjang)
 
   [LearningModelOptions.QUANTUM_LEARNING]:
     "Model pembelajaran yang menggabungkan interaksi, strategi belajar menyenangkan, dan lingkungan positif untuk memaksimalkan proses belajar.",
