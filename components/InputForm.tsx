@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { RPPData, SubjectOptions, ClassOptions, ThemeKBCOptions, LearningModelOptions, TeacherNames, ClassToTeacherMap, ModelDescriptions } from '../types';
+import { RPPData, SubjectOptions, ClassOptions, ThemeKBCOptions, LearningModelOptions, TeacherNames, ClassToTeacherMap, ModelDescriptions, SemesterOptions } from '../types';
 
 interface InputFormProps {
   data: RPPData;
@@ -68,6 +68,19 @@ export const InputForm: React.FC<InputFormProps> = ({ data, onChange, onGenerate
             ))}
           </select>
         </div>
+      </div>
+
+      <div className="mb-4">
+        <label className={labelClass}>Semester</label>
+        <select
+          value={data.semester}
+          onChange={(e) => onChange('semester', e.target.value)}
+          className={inputClass}
+        >
+          {Object.values(SemesterOptions).map((opt) => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
       </div>
 
       <div className="mb-4">
