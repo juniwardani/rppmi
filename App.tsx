@@ -4,12 +4,13 @@ import { InputForm } from './components/InputForm';
 import { DocumentPreview } from './components/DocumentPreview';
 import { generateRPPContent } from './services/geminiService';
 import { generateDocx } from './services/docxService';
-import { RPPData, GeneratedContent, LearningModelOptions } from './types';
+import { RPPData, GeneratedContent, LearningModelOptions, SemesterOptions } from './types';
 
 function App() {
   const [formData, setFormData] = useState<RPPData>({
     mataPelajaran: '',
     faseKelas: '',
+    semester: SemesterOptions.GANJIL,
     materiPokok: '',
     temaKBC: [],
     modelPembelajaran: LearningModelOptions.PBL,
