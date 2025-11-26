@@ -110,7 +110,7 @@ function App() {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm text-green-700">
-                    Masukkan detail pelajaran di bawah ini. AI akan membuatkan RPP lengkap (Tujuan, Kegiatan, Asesmen) sesuai format MIS Al Muslimun.
+                    Masukkan detail pelajaran di bawah ini.
                   </p>
                 </div>
               </div>
